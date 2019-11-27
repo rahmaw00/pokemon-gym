@@ -1,0 +1,201 @@
+body {
+  display: grid;
+  grid-template-rows: 10vh 45vh 45vh;
+  grid-template-areas: 'div header header header'
+                      'aside main main main' 'aside main main main';
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  color:
+}
+
+#menu {
+  grid-area: div;
+  background-color: rgb(217, 72, 85);
+}
+
+#menu-content {
+  bottom: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(12, 100, 217);
+}
+
+#top {
+  grid-area: header;
+  background-color:  rgb(255, 99, 99);
+}
+
+#top-content {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  bottom: 0;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* instead of using webkit-text-fill-color, simply color can be used */
+}
+
+#side {
+  grid-area: aside;
+  background-color: rgb(167, 42, 42);
+  overflow: scroll;
+  grid-template: 20vh 20vh 20vh 20vh 20vh / 1;
+}
+
+#mid {
+  /* display: grid; */
+  grid-area: main;
+  background-color: rgb(117, 31, 49);
+  grid-template: 33vh 33vh 33vh / repeat(3, 33.333%);
+  grid-template-areas: 'div div div' 'div div div'
+}
+
+/* #second {
+  grid-area: section;
+  background-color: rgb(138, 93, 110);
+} */
+
+#side::-webkit-scrollbar {
+  display: none;
+  /* width: 1px;
+  background-color: blue; */
+}
+
+/*
+.scrollbar {
+  width: 2px;
+  height: 300px;
+  margin-bottom: 25px;
+  margin-left: 22px;
+  margin-top: 40px
+  background-color:rgb(250, 117, 220);
+  overflow: hidden;
+  scroll-behavior: smooth;
+  border-radius: 25%;
+}
+
+.force-overflow {
+  min-height: 450px;
+}
+
+#side::-webkit-scrollbar {
+  width: 6px;
+  background-color: pink;
+}
+
+#side::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+#side::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+} */
+
+#trainer{
+  grid-area: div;
+}
+
+#pok1 {
+  grid-area: div;
+}
+
+#pok2 {
+  grid-area: div;
+}
+
+#pok3 {
+  grid-area: div;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li a {
+  padding:50px;
+  margin-left:10px;
+  list-style-type: none;
+  display: block;
+  width: 60px;
+  background-color: tranparent;
+}
+#mahnoor {
+  width:120px;
+  length:170px;
+}
+
+#ramata {
+}
+
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  /* font-family: Optima, sans-serif; */
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  color: rgb(189, 99, 114);
+  background: rgb(150, 5, 43);
+  border-radius: 10%;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: rgba(173, 0, 0, 0.9);
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease;
+}
+
+.collapsible-content .content-inner {
+   background: rgb(79, 12, 12);
+   border-bottom: 1px solid #B80000;
+   border-bottom-left-radius: 12px;
+   border-bottom-right-radius: 12px;
+   padding: .4rem 1rem;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+
+aside  {
+  display: none;
+}
+
+/*
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;rgba(173, 0, 0, 0.9)
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.collapsible {
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+} */

@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  grid-template-rows: 10vh 35vh 35vh 30vh;
+  grid-template-areas: 'nav header header header'
+                      'aside main main main' 'aside main main main'
+                      'aside section section section';
+}
+
+#menu {
+  grid-area: nav;
+  background-color: lightpink;
+}
+
+#top {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+#side {
+  grid-area: aside;
+  background-color: lightyellow;
+}
+
+#mid {
+  grid-area: main;
+  background-color: thistle;
+}
+
+#second {
+  grid-area: section;
+  background-color: lightgreen;
+}
